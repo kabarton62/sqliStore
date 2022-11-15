@@ -3,18 +3,7 @@ Docker in a SQLi Box
 
 ## Introduction
 
-This is a simple docker application using Ubuntu 16.04 xenial, apache2 httpd (2.4), php (7.0) and mariadb (10), a classical LAMP stack, to
-create a vulnerable web application - Vulnerable Mama Shop. Vulnerable Mama Shop is insecurely coded and has a simple SQL injection flaw. It can be used to learn and practice SQL injection. 
-
-> The term "Mama Shop" means a small convenient store in Singapore. In the 70s to 90s, many of these small business store serve residents 
-> living nearby. As Singapore develops, these Mama shops gradually disappear, replaced by modern stores owned by big business chain. 
-> Vulnerable Mama shop has a SQL vulnerability. Can you find it ?
-
-## Disclaimer and Warning
-
-Computer misuse is a serious crime in Singapore and other countries, punishable by law. The source code and instructions provided here are for educational purposes only; meant to help IT defenders understand about SQL Injection vulnerabilities and better defend their systems and applications. It should not be misused for any other purposes. 
-
-Vulnerable Mama Shop(VMS) is an insecure application and should not be exposed on the internet or an internal network. Doing so can result in a system or network compromise. It should only be used in an isolated test lab environment that is meant for security testing and learning. VMS is released under the MIT license. Read the license, the author is not responsible for any damage direct or indirect that arise from using VMS. Use VMS solely at your own risk !
+A simple docker application using Ubuntu 16.04 xenial, apache2 httpd (2.4), php (7.0) and mariadb (10). The only problem is it has a problem. Time to practice some SQL injection. 
 
 ## Installation
 
