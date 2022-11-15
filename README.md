@@ -9,7 +9,7 @@ A simple docker application using Ubuntu 16.04 xenial, apache2 httpd (2.4), php 
 
 The application is packaged as a Docker application. Clone and download a copy for the application
 
-    git clone [https://github.com/ngchianglin/VulnerableMamaShop.git](https://github.com/kabarton62/sqliStore.git)
+    git clone https://github.com/kabarton62/sqliStore.git
 
 Change into the directory and build using docker
 
