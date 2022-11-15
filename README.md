@@ -1,5 +1,5 @@
-# Vulnerable Mama Shop
-A simple docker application for learning SQL Injection
+# Online Convenience Store
+Docker in a SQLi Box
 
 ## Introduction
 
