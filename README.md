@@ -9,42 +9,25 @@ A simple docker application using Ubuntu 16.04 xenial, apache2 httpd (2.4), php 
 
 The application is packaged as a Docker application. Clone and download a copy for the application
 
-    git clone https://github.com/ngchianglin/VulnerableMamaShop.git
+    git clone [https://github.com/ngchianglin/VulnerableMamaShop.git](https://github.com/kabarton62/sqliStore.git)
 
 Change into the directory and build using docker
 
-    cd VulnerableMamaShop
-    docker build -t mamashop .
+    cd sqliStore
+    docker build -t store .
 
 ## Running the Docker Application
 
-To run it interactively
+To run it detached mode
 
-    docker run -it --rm -p 8000:80 mamashop
+    docker run -itd --rm -p 8505:80 store
 
-This will make Mamashop available at http://localhost:8000 or http://[ip address]:8000
+This will make sqliStore available at http://localhost:8505 or http://[ip address]:8505
 
-Do not expose Vulnerable Mama Shop to the internet, it is an insecure application and can lead to a system or network compromise. 
+Do not expose sqliStore to the internet, it is an insecure application and can lead to a system or network compromise. 
 Use it in an isolated test lab environment meant for security testing and learning. 
  
-To run Vulnerable Mama Shop in detached mode
-
-    docker run -d --rm -p 8000:80 mamashop
-    
 Note the mariadb database is restored each time the docker container is started up.     
-
-## Finding the SQL Injection Flaw
-
-A intercepting proxy like OWASP ZAP or Blurpsuite can be used to inspect and alter the traffic between the browser and Mama Shop. 
-Mama Shop is deliberately kept simple, it should be relatively easy to find the SQL injection flaw. 
-
-See if you can dump out the list of customers in Mama Shop. To gain the most understanding, it is advised that the user 
-do this systematically, step by step. Find out where the SQL vulnerability is and proceed to gather information on the database. 
-and finally dump out the customer list. 
-
-For a more detailed walkthrough, refer to the article [https://www.nighthour.sg/articles/2018/learning-sql-injection-using-vulnerable-mama-shop.html](https://www.nighthour.sg/articles/2018/learning-sql-injection-using-vulnerable-mama-shop.html)
-
-
 
 ## Source signature
 Gpg Signed commits are used for committing the source files. 
