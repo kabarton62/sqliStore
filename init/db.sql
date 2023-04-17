@@ -113,9 +113,9 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+create user 'appuser'@'localhost' identified by 'appsecret123';
+create user 'hacked'@'localhost' identified by 'chocolate';
 grant all privileges on appdb.* to 'appuser'@'localhost';
 flush privileges;
 
-create user 'appuser'@'localhost' identified by 'appsecret123';
-create user 'hacked'@'localhost' identified by 'chocolate';
 -- Dump completed on 2018-05-11  2:13:10
