@@ -996,4 +996,7 @@ CREATE TABLE IF NOT EXISTS `slow_log` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+grant all privileges on appdb.* to 'appuser'@'localhost';
+flush privileges;
+
 -- Dump completed on 2022-11-15 20:06:27
